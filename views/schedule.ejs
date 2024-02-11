@@ -1,0 +1,16 @@
+<%- include('partials/header',{ showCart: false , showLogout: false}) %>
+
+
+<script type="text/javascript" src="/script.js"></script>
+    <link rel="stylesheet" href="css/styles-schedule.css">
+    <div class="container">
+        <h1 style="text-align: center;">Request a Call</h1>
+        <form action="/request-call" method="post" id="callForm">
+            <label for="phoneNumber">Enter your phone number:</label>
+            <input type="tel" id="phoneNumber" name="phoneNumber" required>
+            <label for="user-name">Enter your name:</label>
+            <input type="text" id="nameofuser" name="nameofuser" required>
+            <button type="submit">Request Call</button>
+        </form>
+    </div>
+<!-- <%- include('partials/footer') %> -->

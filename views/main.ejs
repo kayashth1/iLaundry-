@@ -1,0 +1,85 @@
+<%- include('partials/header',{ showCart: false,showLogout:true }) %>
+
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <div class="main" style="height: 120vh;" id="main1">
+        <div class="sub-main">
+            <h2 class="sub-main-h2">WHERE <br> FRESHNESS MEETS <br> CARE</h2>
+            <hr>
+            <h4>We will take care of you !</h4>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam, Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Voluptatum laboriosam ea veniam excepturi quis, laudantium amet impedit dolor alias
+                deleniti.</p>
+            <form action="/order" method="post">
+                <button class="main-btn">Schedule Now</button>
+            </form>
+        </div>
+        <div class="sub-main" style="width: 500px;">
+            <img src="images/ug4vfnog.png" alt="" id="submain-img">
+            <!-- <img src="images/maim-ui-new.png" alt="" id="submain-img"> -->
+          
+        </div>
+    </div>
+    <div class="main" id="reason">
+        <div class="reason-sub">
+            <h1 class="heading" style="padding: 24px;font-size: 43px;line-height: 11px;">Delivering Clean Clothes and Peace of Mind</h1>
+            <hr>
+            <h5 class="heading" style="color: #2fa0ba;;">Reason to Choose us:</h5>
+        </div>
+        <div class="reason-sub" id="reason-sub">
+            <div class="reason-sub-sub">
+                <div><img src="images/reason.jpg" alt=""></div>
+                <h4 class="heading">Professional Care</h4>
+                <div>
+                    <p class="heading">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis nam cumque
+                        natus sint
+                        repellendus laborum, possimus consequatur dolores ullam officia.</p>
+                </div>
+            </div>
+            <div class="reason-sub-sub">
+                <div><img src="images/reason.jpg" alt=""></div>
+                <h4 class="heading">Fast Delivery</h4>
+                <div>
+                    <p class="heading">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis animi eum
+                        repellat distinctio
+                        aperiam! Veritatis quasi illum commodi nam error!</p>
+                </div>
+            </div>
+            <div class="reason-sub-sub">
+                <div><img src="images/reason.jpg" alt=""></div>
+                <h4 class="heading">Excellent Results</h4>
+                <div>
+                    <p class="heading">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam exercitationem
+                        architecto
+                        officia quidem sequi ab corporis distinctio ullam labore rem.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="info" id="infos">
+        <div class="list">
+            <ul>
+                <li><a href="">Shop</a></li>
+                <li><a href="">Stocklist</a></li>
+                <li><a href="">Blog</a></li>
+                <li><a href="">About Us</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+            <ul>
+                <li><a href="">FAQ</a></li>
+                <li><a href="">Shopping and Returns</a></li>
+                <li><a href="">Store Policy</a></li>
+                <li><a href="">Future Aspects</a></li>
+            </ul>
+        </div>
+        <div class="subscribe">
+            <h3>Stay Connected</h3>
+            <input class="search" type="email" placeholder="Your Email">
+            <Button>Subscribe</Button>
+        </div>
+
+    </section>
+
+
+    <%- include('partials/footer') %>

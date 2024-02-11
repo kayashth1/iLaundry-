@@ -1,0 +1,200 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: 'Baloo 2', sans-serif;
+font-family: 'Baloo Bhai 2', sans-serif; */
+}
+/* Main page of main  */
+.main{
+    height: 100vh;
+    background-color: #e6e6e6;
+    display: flex;
+    /* justify-content: space-evenly; */
+    /* align-items: center; */
+    font-family: inherit;
+    padding-top: 70px;
+}
+
+#main-content{
+    width: 50%;
+    margin: 13px;
+  padding: 10px;
+}
+
+#submain-img{
+    height: 100%;
+    overflow: hidden;
+    object-fit: cover;
+}
+.sub-main{
+    margin:0px 12px ;
+    padding: 0px 15px;
+    /* width: 50%; */
+}
+.sub-main-h2{
+    font-size: 72px;
+
+}
+#main1{
+    /* background-image: url(../images/pexels-adrienne-andersen-2254065.jpg) ; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #2fa0ba;
+    
+  
+}
+.main-btn{
+  
+/* CSS */
+
+  background: #0b434f;
+  border-radius: 999px;
+  box-shadow: #5E5DF0 0 10px 20px -10px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-family: Inter,Helvetica,"Apple Color Emoji","Segoe UI Emoji",NotoColorEmoji,"Noto Color Emoji","Segoe UI Symbol","Android Emoji",EmojiSymbols,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans",sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  opacity: 1;
+  outline: 0 solid transparent;
+  padding: 8px 18px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: fit-content;
+  word-break: break-word;
+  border: 0;
+
+}
+
+/* Reason page of main  */
+#reason{
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: auto;
+
+}
+.reason-sub{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+#reason-sub{
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+}
+.reason-sub-sub{
+    padding: 50px;
+    margin: 10px;
+    width: 33%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.reason-sub-sub img{
+width:222px;
+border-radius: 170px;
+
+}
+
+
+/* .reason-sub-sub img:hover{
+background-color:#909191;
+
+opacity: .3;
+
+} */
+
+
+.reason-sub-sub div{
+    display: flex;
+    justify-content: center;
+
+}
+
+/* footer & bottom bar  */
+.info{
+    height: 40vh;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.list{
+
+    display: flex;
+    display: flex;
+    padding: 58px;
+    position: relative;
+    /* float: right; */
+    right: 150px;
+}
+.list ul{
+    padding: 20px;
+}
+.list ul li{
+    list-style: none;
+    padding: 5px;
+}
+.list ul li a{
+text-decoration: none;
+color: white;
+}
+.list ul li a:hover{
+
+color: rgb(233, 230, 230);
+}
+.subscribe{
+    position: relative;
+   left: 50px;
+   bottom: 20px;
+   text-align:center;
+}
+.subscribe h3{
+   font-size: 18px;
+   margin: 5px;
+   padding-bottom: 6px;
+}
+.subscribe input{
+    background: transparent;
+    width: 120px;
+    margin: 10px;
+    color: white;
+    font-size: 15px;
+}
+.subscribe button{
+    width: 110px;
+    padding: 12px;
+    border: none;
+    font-size: 15px;
+    background: #b08a8a;
+    color: black;
+    transition: all 1.5s;
+    cursor: pointer;
+}
+.subscribe button:hover{
+    background-color: white;
+    color: black;
+}
+/* footer  */
+footer{
+    background-color: rgb(97, 97, 97);
+    color: rgb(254, 254, 254);
+    height: 60px;
+    padding: 20px;
+   text-align: center;
+}
+
+/* utility class */
+.heading{
+    text-align: center;
+    padding: 8px;
+}

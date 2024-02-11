@@ -1,0 +1,94 @@
+<!-- <script src="script.js"></script> -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <%- include('partials/header',{ showCart: true , showLogout:true}) %>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/style-service.css">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <script type="text/javascript" src="/script.js"></script>
+        <script type="text/javascript" src="/cart.js"></script>
+
+</head>
+
+<body style="background-color: rgb(34 97 122);">
+    <header>
+
+        <!-- <script type="text/javascript" src="../script.js"></script> -->
+        <!-- <script type="text/javascript" src="http://localhost:3000/script.js"></script> -->
+
+        <div class="cart" style="z-index: 2;">
+            <h2 class="cart-title">Your Cart</h2>
+            <div class="cart-content">
+
+            </div>
+            <div class="total">
+                <div class="total-title">Total</div>
+                <div class="total-price">$0</div>
+            </div>
+            <!-- <form action="/stripe-checkout" method="post"> -->
+
+            <button type="button" class="btn-buy" id="payBtn">Pay Now</button>
+            <!-- </form> -->
+            <!-- close the cart  -->
+            <i class='bx bx-x' id="close-cart"></i>
+        </div>
+    </header>
+    <!-- product section  -->
+    <section class="shop container">
+        <h2 class="section-title" style="color: rgb(1, 5, 9);
+        font-size: 36px;
+        text-transform: uppercase;
+        line-height: 47px;">pick cloths to wash !</h2>
+        <div class="shop-content">
+            <!-- box1  -->
+            <div class="product-box">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjgIgCmHYPUZmAfH-MRqKJKY23U525S3d2vQrQrBr7iLpQY2Tkj4UTB6Vm5jVG2Rfn0MZJsXfRC1HoJuZo_ASi2_iMkQavXsbb5MMM_kWcQ7ov6twmUJemBIwLE1Y9sMWmFeR83UJzj_b-vPjgzqxalACII11MRFdPQLy_Y2NfFrpBYDet8e00uM3_8MA/s320/product5.jpeg"
+                    alt="" class="product-img">
+                <h2 class="product-title">Winter Wear</h2>
+                <span class="price">$80</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!-- box2  -->
+            <div class="product-box">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi_dWXKBw4tu2E_yNFCRJEJ0_hkwjq_CeFjY7bZGiRrrtaHsYXZX310U0ww3griCplDLHSPjV3NhZRDG70jHpKEXMbkTQf39XpsvlgtqqzrI8eTqxWpp1aZIq5dHCMAD75KYNWUglwCMFO98gNswgcVX2o59bShMBYJp8hXYYM2jJx3NdnZkeZUu82BsA/s320/product4.jpeg"
+                    alt="" class="product-img">
+                <h2 class="product-title">T-Shirt</h2>
+                <span class="price">$40</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!-- box3  -->
+            <div class="product-box">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhc4ytVj2G0KRynhqXCs7N11zjqClJv5ihsKRRfz1lKN-vaXFzYACVLya9GACdV3TUuP5P5LKZV3zZGitX0ZfhsoON1S6o1BgObzh-2T1g6j8-i7WiiztcmHU7_FxqlDqkpIeqybFcHRXZy50bz8Htg0kyOsoJYH_LB_zQD_fFECXsBHeOSuhgambe19Q/s320/product2.jpeg"
+                    alt="" class="product-img">
+                <h2 class="product-title">Backpack</h2>
+                <span class="price">$30</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!-- box4  -->
+            <div class="product-box">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj3HV9SNWd3zBx82l9UNLXGOHC-KftOxkIJ93fjwWUqKFuJplU0uXvGUI8tEGrutuhbCvi4fu_HpbI2o0X8AdFcUo5wwTcbDHUJ2OBZ2EBivgYLRNnOaxVijWC21ISaB9J2gNtb2Vsuk0PH0NtWlVhzRH-PZ3vMYYNHb2kFsqQc3bYGEhgQyjmn02v5DA/s320/product8.jpeg"
+                    alt="" class="product-img">
+                <h2 class="product-title">Sport Shoe</h2>
+                <span class="price">$100</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!-- box5  -->
+            <div class="product-box">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg6IukVxdBFtfjfQE5Q8A-C8SM1L9rdi8D1OGeKZHSSXgm7QerjgUvvwQkcX09T9QoNspbJy1YfGNQDNZAQas2I8PGvTkjA4MHkHKMug7bCntdmTG0xHveMAra7SC1-FXIZRlLHu1WNqQ8w5PLKe_swHx0eejPP2mWrhlozOTgehJ3xueYsoHL0MkvvvA/s320/product3.jpeg"
+                    alt="" class="product-img">
+                <h2 class="product-title">Sports Cap</h2>
+                <span class="price">$20</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
+<!-- <%- include('partials/footer') %> -->
