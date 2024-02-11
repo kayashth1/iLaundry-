@@ -5,14 +5,15 @@ body {
     /* display: flex; */
     /* align-items: center; */
     /* justify-content: center; */
-    height: 100vh;
-    background-color: #f4f4f4;
+    height: 120vh;
+    background-color: #929590;
    
 }
 
 .container {
     background-color: #fff;
-    padding: 20px;
+    padding: 65px;
+    margin: 60px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     /* margin: 0px 23px ; */

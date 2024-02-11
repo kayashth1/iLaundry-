@@ -80,7 +80,7 @@ app.get("/", function(req, res){
 app.post("/register", async (req,res)=>{
 const user = await User.findOne({username:req.body.username});
 if(user){
-return res.status(400).send("User ALready Created");
+return res.status(400).send("User Already Created");
 
 }
   
