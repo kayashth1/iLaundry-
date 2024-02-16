@@ -66,8 +66,10 @@ exports.initializingPassport = (passport) => {
 
   // Google strategy
   passport.use(new GoogleStrategy({
-    clientID: '641219956541-829t3q4ie3qe1tdeb7bl5j65h7tfipih.apps.googleusercontent.com',
-    clientSecret: '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',
+    // clientID: '641219956541-829t3q4ie3qe1tdeb7bl5j65h7tfipih.apps.googleusercontent.com',
+    // clientSecret: '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',
+    clientID:process.env.GOOGLE_CLIENT_ID,
+    clientSecret:process.env.GOOGLE_CLIENT_SECRET,
     callbackURL: "http://localhost:3000/auth/google/main",
     userProfileURL: "https://www.googleapis.com/oauth2/v3/userinfo"
   }, async (accessToken, refreshToken, profile, done) => {
