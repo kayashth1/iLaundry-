@@ -9,9 +9,9 @@ const passport = require("passport");
 const { initializingPassport,isAuthenticated } = require("./passportConfig.js");
 const session = require('express-session');
 const mongoose = require("mongoose");
-const dotenv = require("dotenv")
+const dotenv = require("dotenv");
 const cors = require('cors');
-const Dotenv = require('dotenv-webpack');
+// const Dotenv = require('dotenv-webpack');
 
 // module.exports = {
 //   // other webpack configurations...
@@ -22,8 +22,8 @@ const Dotenv = require('dotenv-webpack');
 
 // const stripe_key = process.env.stripe_key;
 
-// const stripe = require('stripe')('sk_test_51OXsEpSBoERWRPWyS6BdFvOviKjMTV4aLtxNWnrdGJBNWsYobzBDnMepBFhVSB3l6alh3bAqKF7P8Ojw6z8Q1Px400rr739w5W');
-const stripe = process.env.stripe_key;
+require('dotenv').config()
+const stripe = require('stripe')(process.env.API_KEY);
 
 app.use(express.static("public"));
 app.use('/images', express.static("public"));

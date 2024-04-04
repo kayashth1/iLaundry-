@@ -65,35 +65,35 @@ exports.initializingPassport = (passport) => {
   }));
 
   // Google strategy
-  passport.use(new GoogleStrategy({
-    // clientID: '641219956541-829t3q4ie3qe1tdeb7bl5j65h7tfipih.apps.googleusercontent.com',
-    // clientSecret: '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',
-    clientID:process.env.GOOGLE_CLIENT_ID,
-    clientSecret:process.env.GOOGLE_CLIENT_SECRET,
-    callbackURL: "http://localhost:3000/auth/google/main",
-    userProfileURL: "https://www.googleapis.com/oauth2/v3/userinfo"
-  }, async (accessToken, refreshToken, profile, done) => {
-    try {
-      // Check if the user already exists in your database
-      const existingUser = await User.findOne({ googleId: profile.id });
+//   passport.use(new GoogleStrategy({
+//     // clientID: '641219956541-829t3q4ie3qe1tdeb7bl5j65h7tfipih.apps.googleusercontent.com',
+//     // clientSecret: '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',
+//     clientID:process.env.GOOGLE_CLIENT_ID,
+//     clientSecret:process.env.GOOGLE_CLIENT_SECRET,
+//     callbackURL: "http://localhost:3000/auth/google/main",
+//     userProfileURL: "https://www.googleapis.com/oauth2/v3/userinfo"
+//   }, async (accessToken, refreshToken, profile, done) => {
+//     try {
+//       // Check if the user already exists in your database
+//       const existingUser = await User.findOne({ googleId: profile.id });
 
-      if (existingUser) {
-        return done(null, existingUser);
-      }
+//       if (existingUser) {
+//         return done(null, existingUser);
+//       }
 
-      // If the user doesn't exist, create a new user in your database
-      const newUser = new User({
-        username: profile.displayName,
-        googleId: profile.id,
-        // Add other necessary fields as needed
-      });
+//       // If the user doesn't exist, create a new user in your database
+//       const newUser = new User({
+//         username: profile.displayName,
+//         googleId: profile.id,
+//         // Add other necessary fields as needed
+//       });
 
-      await newUser.save();
-      return done(null, newUser);
-    } catch (error) {
-      return done(error, false);
-    }
-  }));
+//       await newUser.save();
+//       return done(null, newUser);
+//     } catch (error) {
+//       return done(error, false);
+//     }
+//   }));
 
   // Serialization and deserialization functions remain the same as in your existing code
   passport.serializeUser((user, done) => {
